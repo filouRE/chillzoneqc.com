@@ -13,3 +13,8 @@
 #root {
   overflow-x: hidden;
 }
+
+.sidebar-active {
+  transform: translateX(-100vw);
+  transition: 400ms;
+}

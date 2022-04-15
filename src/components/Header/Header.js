@@ -1,24 +1,51 @@
 import React from "react";
+import { useEffect, useState } from "react";
 
-const Header = () => {
-  return (
-    <>
-      <header className="nav flex justify-between items-center w-full px-6 py-8 text-white px-20">
-        <a href="/" className="font-bold text-3xl">
-          CHILLZONE QC
-        </a>
-        <div className="sub-nav flex justify-between items-center w-[20%] text-lg px-6">
-          <a href="">Accueil</a>
-          <a href="https://discord.gg/CZQC" target="_blank">
-            Discord
+import Burger from "../../data/burger.svg";
+import Exit from "../../data/exit.svg";
+
+const Header = ({ children }) => {
+  const [loaded, setLoaded] = useState(false);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setMobile(window.innerWidth <= 600);
+    setLoaded(true);
+  }, []);
+
+  const onToggleSidebar = (toggle) => {
+    document.querySelector("html").classList.toggle("sidebar-active");
+
+    setTimeout(
+      () => {
+        //document.querySelector("html").classList.toggle("sidebar-overflow");
+      },
+      toggle ? 300 : 0
+    );
+  };
+
+  if (loaded) {
+    return (
+      <>
+        <header className="sticky top-0 z-99 py-6 px-6 flex items-center justify-between">
+          <a href="/">
+            <a className="text-3xl font-bold text-white">CHILLZONE QC</a>
           </a>
-          <a href="" className="bg-blue-600 p-2 text-white rounded ">
-            Whitelist
-          </a>
-        </div>
-      </header>
-    </>
-  );
+          {mobile ? <img width={30} height={30} src={Burger} className="mr-6" onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-5 items-center text-white">{children}</nav>}
+        </header>
+
+        <header className="absolute w-screen h-screen top-0 overflow-hidden overflow-scroll translate-x-full">
+          <div className="py-6 px-6 flex items-center justify-between">
+            <a href="/">
+              <a className="text-3xl font-bold">CHILLZONE QC</a>
+            </a>
+            <img width={30} height={30} src={Exit} className=" mr-6" onClick={() => onToggleSidebar(false)} />
+          </div>
+        </header>
+      </>
+    );
+  } else {
+    return <></>;
+  }
 };
-
 export default Header;
