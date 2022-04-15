@@ -1,8 +1,11 @@
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 import Arrow from "./data/arrow.svg";
 import Down from "./data/down.svg";
 import Wave from "./data/wave.svg";
 import Quebec from "./data/quebec.png";
+import Donut from "./data/donut.png";
 
 function App() {
   return (
@@ -13,18 +16,18 @@ function App() {
           <a href="https://discord.gg/CZQC" target="_blank">
             Discord
           </a>
-          <a href="" className="bg-blue-600 p-2 text-white rounded mr-6">
+          <a href="" className="bg-blue-600 px-3 py-2 text-white rounded mr-6">
             Whitelist
           </a>
         </Header>
         <div className="md:justify-center md:items-center md:text-center content h-[80vh] text-white px-5 flex flex-col justify-center gap-6">
-          <h1 className="md:text-5xl md:leading-tight font-black text-7xl leading-tight">
+          <h1 className="md:text-5xl md:leading-tight lg:text-4xl font-black text-7xl leading-tight">
             L'EXPÉRIENCE SQUAD FAIT PAR DES <span className="text-blue-600">QUÉBÉCOIS</span> POUR LES <span className="text-blue-600">QUÉBÉCOIS</span>
           </h1>
           <a
             href="https://discord.gg/CZQC"
             target="_blank"
-            className="flex text-center justify-center gap-2 bg-blue-600 rounded w-56
+            className="flex text-center justify-center gap-2 bg-blue-600 rounded-lg w-56
            p-3"
           >
             <button>REJOIGNEZ NOUS</button>
@@ -39,46 +42,73 @@ function App() {
       </div>
       <img src={Wave} alt="" className="w-screen block" />
       <div className="flex item-center justify-evenly flex-col flex-wrap px-80 2xl:px-10 md:px-5">
-        <h2 id="about-us" className="flex items-center justify-center font-semibold text-4xl py-6 text-gray-900 text-center">
+        <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 text-gray-900 text-center">
           Qui sommes-nous?
         </h2>
         <div className="group-cards flex flex-col gap-6">
           <div className="cards-1 flex items-center md:flex-wrap gap-8">
             <div className="card-1 flex flex-col items-center bg-gray-200 rounded-md px-6 py-9 border-4 border-gray-900">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold">Communaute Quebecoise</h3>
+              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
             <div className="card-2 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold">Communaute Quebecoise</h3>
+              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
             <div className="card-3 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold">Communaute Quebecoise</h3>
+              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
           </div>
           <div className="cards-1 flex items-center md:flex-wrap gap-8">
             <div className="card-1 flex flex-col items-center bg-gray-200 rounded-md px-6 py-9 border-4 border-gray-900">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold">Communaute Quebecoise</h3>
+              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
             <div className="card-2 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold">Communaute Quebecoise</h3>
+              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
             <div className="card-3 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold">Communaute Quebecoise</h3>
+              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
           </div>
         </div>
       </div>
+      <div id="price">
+        <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 text-gray-900 text-center">
+          Soutenez nous avec un abonnement exclusif!
+        </h2>
+      </div>
+      <div id="ad" className="px-5  w-screen flex items-center justify-center">
+        <div id="box" className="bg-blue-600 rounded-2xl flex items-center justify-start gap-5 px-10 pb-5">
+          <div id="text">
+            <h3 id="about-us" className="md:text-center md:text-2xl md:items-center flex flex-col items-start justify-center font-black text-4xl py-6 text-white">
+              REJOINS NOUS SUR <br /> DISCORD DÈS MAINTENANT
+            </h3>
+            <div id="right-side" className="md:flex-col-reverse flex gap-5 justify-center items-center">
+              <a href="https://discord.gg/CZQC" target="_blank" className="md:px-10 lg:h-auto lg:py-3 flex text-center bg-gray-900 text-white rounded-lg px-6 h-12">
+                <button className="font-bold ">Rejoindre notre Discord</button>
+              </a>
+              <div id="reversed-flex" className="md:text-center">
+                <p className="md:font-bold lg:text-base text-white font-black text-xl">500+ MEMBRES ACTIFS</p>
+                <p className="md:font-bold lg:text-base text-white font-black text-xl">
+                  STAFF CONNECTER H24 POUR <br /> TOUT QUESTION!
+                </p>
+              </div>
+            </div>
+          </div>
+          <img src={Donut} alt="" className="md:hidden" />
+        </div>
+      </div>
+      <Footer />
     </>
   );
 }
