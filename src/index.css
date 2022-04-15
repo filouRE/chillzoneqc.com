@@ -11,10 +11,35 @@
 }
 
 #root {
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  transition: 400ms;
 }
 
 .sidebar-active {
   transform: translateX(-100vw);
   transition: 400ms;
+  overflow: hidden !important;
+}
+
+.bounce {
+  animation: infinite bounce 2000ms;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

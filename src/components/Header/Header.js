@@ -15,31 +15,25 @@ const Header = ({ children }) => {
 
   const onToggleSidebar = (toggle) => {
     document.querySelector("html").classList.toggle("sidebar-active");
-
-    setTimeout(
-      () => {
-        //document.querySelector("html").classList.toggle("sidebar-overflow");
-      },
-      toggle ? 300 : 0
-    );
+    setTimeout(() => {}, toggle ? 300 : 0);
   };
 
   if (loaded) {
     return (
       <>
-        <header className="sticky top-0 z-99 py-6 px-6 flex items-center justify-between">
+        <header className="sticky top-0 z-99 py-6 px-6 flex items-center justify-between overflow-x-hidden">
           <a href="/">
             <a className="text-3xl font-bold text-white">CHILLZONE QC</a>
           </a>
-          {mobile ? <img width={30} height={30} src={Burger} className="mr-6" onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-5 items-center text-white">{children}</nav>}
+          {mobile ? <img width={30} height={30} src={Burger} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center text-white">{children}</nav>}
         </header>
 
-        <header className="absolute w-screen h-screen top-0 overflow-hidden overflow-scroll translate-x-full">
+        <header className="absolute w-screen h-screen top-0 overflow-hidden translate-x-full">
           <div className="py-6 px-6 flex items-center justify-between">
             <a href="/">
               <a className="text-3xl font-bold">CHILLZONE QC</a>
             </a>
-            <img width={30} height={30} src={Exit} className=" mr-6" onClick={() => onToggleSidebar(false)} />
+            <img width={30} height={30} src={Exit} onClick={() => onToggleSidebar(false)} />
           </div>
         </header>
       </>
