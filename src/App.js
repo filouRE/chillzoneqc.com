@@ -17,7 +17,7 @@ function App() {
           <a href="https://discord.gg/CZQC" target="_blank">
             Discord
           </a>
-          <a href="" className="bg-blue-600 px-3 py-2 text-white rounded mr-6">
+          <a href="https://www.patreon.com/CZQC" className="bg-blue-600 px-3 py-2 text-white rounded mr-6">
             Whitelist
           </a>
         </Header>
