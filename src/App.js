@@ -6,13 +6,14 @@ import Down from "./data/down.svg";
 import Wave from "./data/wave.svg";
 import Quebec from "./data/quebec.png";
 import Donut from "./data/donut.png";
+import Spring from "./data/spring.png";
 
 function App() {
   return (
     <>
       <div className="hero h-screen w-screen bg-[url('./data/background.png')] bg-center bg-no-repeat bg-cover px-20 md:px-1">
-        <Header>
-          <a href="">Accueil</a>
+        <Header color="text-white">
+          <a href="/">Accueil</a>
           <a href="https://discord.gg/CZQC" target="_blank">
             Discord
           </a>
@@ -34,49 +35,49 @@ function App() {
             <img src={Arrow} alt="arrow" className="w-4" />
           </a>
         </div>
-        <div className="  flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <a href="#about-us">
             <img src={Down} alt="" className="w-6 cursor-pointer transition-all bounce" />
           </a>
         </div>
       </div>
       <img src={Wave} alt="" className="w-screen block" />
-      <div className="flex item-center justify-evenly flex-col flex-wrap px-80 2xl:px-10 md:px-5">
+      <div className="2xl:px-40 md:px-5 lgg:px-5 flex item-center justify-evenly flex-col flex-wrap px-80">
         <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 text-gray-900 text-center">
           Qui sommes-nous?
         </h2>
         <div className="group-cards flex flex-col gap-6">
           <div className="cards-1 flex items-center md:flex-wrap gap-8">
-            <div className="card-1 flex flex-col items-center bg-gray-200 rounded-md px-6 py-9 border-4 border-gray-900">
+            <div className="card-1 flex flex-col items-center bg-gray-200 rounded-md px-6 py-9 border-4 border-gray-900 gap-3">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
+              <h3 className="font-bold text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
-            <div className="card-2 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
+            <div className="card-2 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900 gap-3">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
+              <h3 className="font-bold text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
-            <div className="card-3 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
+            <div className="card-3 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900 gap-3">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
+              <h3 className="font-bold text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
           </div>
           <div className="cards-1 flex items-center md:flex-wrap gap-8">
-            <div className="card-1 flex flex-col items-center bg-gray-200 rounded-md px-6 py-9 border-4 border-gray-900">
+            <div className="card-1 flex flex-col items-center bg-gray-200 rounded-md px-6 py-9 border-4 border-gray-900 gap-3">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
+              <h3 className="font-bold text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
-            <div className="card-2 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
+            <div className="card-2 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900 gap-3">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
+              <h3 className="font-bold text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
-            <div className="card-3 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900">
+            <div className="card-3 flex flex-col items-center bg-gray-200 rounded px-6 py-9 border-4 border-gray-900 gap-3">
               <img src={Quebec} alt="quebec logo" />
-              <h3 className="font-bold lg:text-center">Communaute Quebecoise</h3>
+              <h3 className="font-bold text-center">Communaute Quebecoise</h3>
               <p className="text-center text-orange-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tincidunt metus, a vestibulum arcu tempor sit amet.</p>
             </div>
           </div>
@@ -109,6 +110,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      <img src={Spring} alt="" className="lg:hidden absolute top-[130vh] right-0" />
     </>
   );
 }

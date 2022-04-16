@@ -37,6 +37,22 @@ html {
   animation: infinite bounce 2000ms;
 }
 
+.Tos {
+  padding: 2em 5em;
+}
+
+.Tos * {
+  padding: 1em 0;
+}
+
+.Politique {
+  padding: 2em 5em;
+}
+
+.Politique * {
+  padding: 1em 0;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);

@@ -28,7 +28,7 @@ export default function Footer() {
         Tous les droits sont réservés.
       </span>
       <nav className="flex gap-3 text-center">
-        <a href="/privacy">
+        <a href="/politique">
           <b className="text-base">Politique de confidentialité</b>
         </a>
 
