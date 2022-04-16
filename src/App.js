@@ -41,7 +41,7 @@ function App() {
           </a>
         </div>
       </div>
-      <img src={Wave} alt="" className="w-screen block" />
+      <img src={Wave} alt="wave image" className="w-screen" />
       <div className="2xl:px-40 md:px-5 lgg:px-5 flex item-center justify-evenly flex-col flex-wrap px-80">
         <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 text-gray-900 text-center">
           Qui sommes-nous?
