@@ -1,6 +1,8 @@
+// Imports
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+// Images
 import Arrow from "./data/arrow.svg";
 import Down from "./data/down.svg";
 import Wave from "./data/wave.svg";
