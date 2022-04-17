@@ -14,8 +14,18 @@ const Header = ({ children, color = "text-white", filter }) => {
   }, []);
 
   const onToggleSidebar = (toggle) => {
-    document.querySelector("html").classList.toggle("sidebar-active");
-    setTimeout(() => {}, toggle ? 300 : 0);
+    setTimeout(() => {
+      document.querySelector("html").classList.toggle("sidebar-active");
+      if (!toggle) {
+        setTimeout(() => {
+          document.querySelector(".open-header").classList.remove("absolute");
+          document.querySelector(".open-header").classList.toggle("hidden");
+        }, 300);
+      } else {
+        document.querySelector(".open-header").classList.remove("hidden");
+        document.querySelector(".open-header").classList.toggle("absolute");
+      }
+    }, 300);
   };
 
   if (loaded) {
@@ -28,7 +38,7 @@ const Header = ({ children, color = "text-white", filter }) => {
           {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center text-white">{children}</nav>}
         </header>
 
-        <header className="absolute w-screen h-screen top-0 overflow-hidden translate-x-full">
+        <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
           <div className="py-6 px-6 flex items-center justify-between">
             <a href="/">
               <a className="text-3xl font-bold">CHILLZONE QC</a>
