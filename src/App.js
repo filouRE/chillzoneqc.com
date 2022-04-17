@@ -23,7 +23,7 @@ function App() {
             </a>
           </Header>
           <div className="md:justify-center md:items-center md:text-center content h-[80vh] text-white px-5 flex flex-col justify-center gap-6">
-            <h1 className="md:text-5xl md:leading-tight lg:text-4xl font-black text-7xl leading-tight">
+            <h1 className="md:text-4xl lg:text-5xl font-black text-7xl leading-tight">
               L'EXPÉRIENCE SQUAD FAIT PAR DES <span className="text-blue-600">QUÉBÉCOIS</span> POUR LES <span className="text-blue-600">QUÉBÉCOIS</span>
             </h1>
             <a
