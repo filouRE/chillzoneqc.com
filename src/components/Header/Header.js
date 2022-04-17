@@ -20,12 +20,12 @@ const Header = ({ children, color = "text-white", filter }) => {
         setTimeout(() => {
           document.querySelector(".open-header").classList.remove("absolute");
           document.querySelector(".open-header").classList.toggle("hidden");
-        }, 300);
+        }, 200);
       } else {
         document.querySelector(".open-header").classList.remove("hidden");
         document.querySelector(".open-header").classList.toggle("absolute");
       }
-    }, 300);
+    }, 20);
   };
 
   if (loaded) {
