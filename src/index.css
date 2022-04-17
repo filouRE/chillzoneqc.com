@@ -9,7 +9,9 @@
   padding: 0;
   font-family: "Work Sans", sans-serif;
 }
-
+.gay {
+  overflow-x: hidden !important;
+}
 html {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
@@ -59,21 +61,5 @@ body {
 
   100% {
     transform: translateY(0);
-  }
-}
-
-/* ----------- iPhone 6 ----------- */
-
-@media screen and (max-width: 375px) {
-  body {
-    overflow: hidden !important;
-  }
-}
-
-/* ----------- iPad mini ----------- */
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow: hidden !important;
   }
 }
