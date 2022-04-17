@@ -21,7 +21,7 @@ const Header = ({ children, color = "text-white", filter }) => {
   if (loaded) {
     return (
       <>
-        <header className="gay sticky top-0 z-99 py-6 px-5 flex items-center justify-between">
+        <header className="sticky top-0 z-99 py-6 px-5 flex items-center justify-between">
           <a href="/">
             <a className={`text-3xl font-bold ${color}`}>CHILLZONE QC</a>
           </a>
