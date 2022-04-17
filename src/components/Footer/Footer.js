@@ -6,7 +6,7 @@ import Youtube from "../../data/youtube.svg";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col items-center gap-1 my-5">
+    <footer className="w-full flex flex-col items-center gap-1 my-5 px-2">
       <div id="icons" className="flex gap-5 items-center">
         {" "}
         <a href="https://www.patreon.com/CZQC" target="_blank">

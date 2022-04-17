@@ -85,7 +85,7 @@ function App() {
           </div>
         </div>
         <div id="price">
-          <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 text-gray-900 text-center">
+          <h2 id="prices" className="md:text-3xl flex items-center justify-center font-bold text-6xl py-6 px-2 text-gray-900 text-center">
             Soutenez nous avec un abonnement exclusif!
           </h2>
         </div>
