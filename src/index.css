@@ -56,3 +56,63 @@ html {
     transform: translateY(0);
   }
 }
+
+/* ================ */
+/* Carousel & Plans */
+/* ================ */
+
+/* No SASS :( */
+
+@layer components {
+  /* PLANS */
+  .Plans div {
+    @apply flex flex-col gap-5 justify-between items-center;
+    @apply px-5 py-10 rounded-md w-[30vw] h-[450px] text-black bg-[#f4f4f4];
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .Plans span {
+    @apply text-2xl;
+  }
+
+  .Plans b {
+    @apply text-5xl;
+  }
+
+  .Plans a {
+    @apply bg-white rounded-md py-5 w-full text-center;
+  }
+
+  .Plans a b {
+    @apply text-xl;
+  }
+
+  .Plans ul {
+    @apply flex flex-col gap-5;
+  }
+
+  .Plans div:nth-child(2) {
+    @apply text-white bg-blue-600 h-[480px];
+  }
+  .Plans div:nth-child(2) a {
+    @apply bg-black;
+  }
+
+  /* CAROUSEL */
+  .Carousel {
+    @apply flex justify-center items-center mb-10;
+  }
+
+  .Carousel .container {
+    @apply relative min-h-[500px] flex justify-center;
+  }
+
+  .Carousel .slider {
+    @apply flex items-center gap-10 absolute;
+    transition: 300ms;
+  }
+
+  .Carousel.mobile .slider div {
+    
+  }
+}

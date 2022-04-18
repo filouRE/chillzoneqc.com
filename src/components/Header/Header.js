@@ -5,12 +5,14 @@ import Burger from "../../data/burger.svg";
 import Exit from "../../data/exit.svg";
 
 const Header = ({ children, color = "text-white", filter }) => {
-  const [loaded, setLoaded] = useState(false);
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
+    // Update mobile state every resize
+    window.addEventListener("resize", () => {
+      setMobile(window.innerWidth <= 600);
+    });
     setMobile(window.innerWidth <= 600);
-    setLoaded(true);
   }, []);
 
   const onToggleSidebar = (toggle) => {
@@ -28,28 +30,40 @@ const Header = ({ children, color = "text-white", filter }) => {
     }, 20);
   };
 
-  if (loaded) {
-    return (
-      <>
-        <header className="sticky top-0 z-99 py-6 px-5 flex items-center justify-between">
-          <a href="/" className={`text-3xl font-bold ${color}`}>
+  return (
+    <>
+      <header className="sticky top-0 z-99 py-6 px-5 flex items-center justify-between">
+        <a href="/" className={`text-3xl font-bold ${color}`}>
+          CHILLZONE QC
+        </a>
+        {mobile ? (
+          <img
+            width={30}
+            height={30}
+            src={Burger}
+            className={`cursor-pointer ${filter}`}
+            onClick={() => onToggleSidebar(true)}
+          />
+        ) : (
+          <nav className="flex gap-10  items-center text-white">{children}</nav>
+        )}
+      </header>
+
+      <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
+        <div className="py-6 px-6 flex items-center justify-between">
+          <a href="/" className="text-3xl font-bold">
             CHILLZONE QC
           </a>
-          {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center text-white">{children}</nav>}
-        </header>
-
-        <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
-          <div className="py-6 px-6 flex items-center justify-between">
-            <a href="/" className="text-3xl font-bold">
-              CHILLZONE QC
-            </a>
-            <img width={30} height={30} src={Exit} className="cursor-pointer" onClick={() => onToggleSidebar(false)} />
-          </div>
-        </header>
-      </>
-    );
-  } else {
-    return <></>;
-  }
+          <img
+            width={30}
+            height={30}
+            src={Exit}
+            className="cursor-pointer"
+            onClick={() => onToggleSidebar(false)}
+          />
+        </div>
+      </header>
+    </>
+  );
 };
 export default Header;
