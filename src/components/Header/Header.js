@@ -32,21 +32,11 @@ const Header = ({ children, color = "text-white", filter }) => {
 
   return (
     <>
-      <header className="sticky top-0 z-99 py-6 px-5 flex items-center justify-between">
+      <header className=" top-0 z-99 py-6 px-5 flex items-center justify-between">
         <a href="/" className={`text-3xl font-bold ${color}`}>
           CHILLZONE QC
         </a>
-        {mobile ? (
-          <img
-            width={30}
-            height={30}
-            src={Burger}
-            className={`cursor-pointer ${filter}`}
-            onClick={() => onToggleSidebar(true)}
-          />
-        ) : (
-          <nav className="flex gap-10  items-center text-white">{children}</nav>
-        )}
+        {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center text-white">{children}</nav>}
       </header>
 
       <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
@@ -54,13 +44,7 @@ const Header = ({ children, color = "text-white", filter }) => {
           <a href="/" className="text-3xl font-bold">
             CHILLZONE QC
           </a>
-          <img
-            width={30}
-            height={30}
-            src={Exit}
-            className="cursor-pointer"
-            onClick={() => onToggleSidebar(false)}
-          />
+          <img width={30} height={30} src={Exit} className="cursor-pointer" onClick={() => onToggleSidebar(false)} />
         </div>
       </header>
     </>

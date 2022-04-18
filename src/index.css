@@ -23,24 +23,16 @@ html {
   overflow: hidden !important;
 }
 
+.Tos .content * {
+  padding: 1em 0;
+}
+
+.Politique .content * {
+  padding: 1em 0;
+}
+
 .bounce {
   animation: infinite bounce 2000ms;
-}
-
-.Tos {
-  padding: 2em 5em;
-}
-
-.Tos * {
-  padding: 1em 0;
-}
-
-.Politique {
-  padding: 2em 5em;
-}
-
-.Politique * {
-  padding: 1em 0;
 }
 
 @keyframes bounce {
@@ -54,61 +46,5 @@ html {
 
   100% {
     transform: translateY(0);
-  }
-}
-
-/* ================ */
-/* Carousel & Plans */
-/* ================ */
-
-/* No SASS :( */
-
-@layer components {
-  /* PLANS */
-  .Plans {
-    @apply flex items-center justify-center mb-5 gap-5;
-  }
-
-  .Plans div {
-    @apply flex flex-col gap-5 justify-between items-center;
-    @apply px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-black bg-[#f4f4f4];
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .Plans span {
-    @apply text-2xl;
-  }
-
-  .Plans b {
-    @apply text-5xl;
-  }
-
-  .Plans a {
-    @apply bg-white rounded-md py-5 w-full text-center;
-  }
-
-  .Plans a b {
-    @apply text-xl;
-  }
-
-  .Plans ul {
-    @apply flex flex-col gap-5;
-  }
-
-  .Plans div:nth-child(2) {
-    @apply text-white bg-blue-600 h-[480px];
-  }
-  .Plans div:nth-child(2) a {
-    @apply bg-black;
-  }
-
-  @media screen and (max-width: 700px) {
-    .Plans {
-      @apply flex-col gap-5 px-5;
-    }
-
-    .Plans div {
-      @apply w-full max-w-full h-[400px];
-    }
   }
 }

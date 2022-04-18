@@ -87,54 +87,51 @@ function App() {
           </div>
         </div>
         <div id="price">
-          <h2 id="prices" className="md:text-3xl flex items-center justify-center font-bold text-6xl py-6 px-2 text-gray-900 text-center">
+          <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 px-2 text-gray-900 text-center">
             Soutenez nous avec un abonnement exclusif!
           </h2>
-
           <div>
-            <div className="Plans">
-              <div>
-                <span>VIP</span>
-                <b>
-                  $1<span>/month</span>
+            <div className="flex items-center justify-center mb-5 gap-5 md:flex-col md:px-5">
+              <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[80vw] md:max-w-full md:h-[400px]">
+                <span className="text-2xl">VIP</span>
+                <b className="text-5xl">
+                  $3<span className="text-2xl">/mois</span>
                 </b>
-                <ul>
+                <ul className="flex flex-col gap-5">
                   <li>FEATURE</li>
                   <li>FEATURE</li>
                   <li>FEATURE</li>
                 </ul>
-                <a>
-                  <b>S'abonner maintenant</b>
+                <a className="bg-white rounded-md py-5 w-full text-center">
+                  <b className="text-xl">S'abonner maintenant</b>
                 </a>
               </div>
-
-              <div>
-                <span>VIP+</span>
-                <b>
-                  $2<span>/month</span>
+              <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] text-white bg-blue-600 h-[480px] md:w-[83vw] md:max-w-full md:h-[400px]">
+                <span className="text-2xl">VIP+</span>
+                <b className="text-5xl">
+                  $6<span className="text-2xl">/mois</span>
                 </b>
-                <ul>
+                <ul className="flex flex-col gap-5">
                   <li>FEATURE</li>
                   <li>FEATURE</li>
                   <li>FEATURE</li>
                 </ul>
-                <a>
-                  <b>S'abonner maintenant</b>
+                <a className="rounded-md py-5 w-full text-center bg-black ">
+                  <b className="text-xl">S'abonner maintenant</b>
                 </a>
               </div>
-
-              <div>
-                <span>VIP++</span>
-                <b>
-                  $5<span>/month</span>
+              <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[80vw]  md:max-w-full md:h-[400px]">
+                <span className="text-2xl">VIP++</span>
+                <b className="text-5xl">
+                  $10<span className="text-2xl">/mois</span>
                 </b>
-                <ul>
+                <ul className="flex flex-col gap-5">
                   <li>FEATURE</li>
                   <li>FEATURE</li>
                   <li>FEATURE</li>
                 </ul>
-                <a>
-                  <b>S'abonner maintenant</b>
+                <a className="bg-white rounded-md py-5 w-full text-center">
+                  <b className="text-xl">S'abonner maintenant</b>
                 </a>
               </div>
             </div>
