@@ -67,7 +67,7 @@ html {
   /* PLANS */
   .Plans div {
     @apply flex flex-col gap-5 justify-between items-center;
-    @apply px-5 py-10 rounded-md w-[30vw] h-[450px] text-black bg-[#f4f4f4];
+    @apply px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-black bg-[#f4f4f4];
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -112,7 +112,11 @@ html {
     transition: 300ms;
   }
 
+  .Carousel.mobile .slider {
+
+  }
+
   .Carousel.mobile .slider div {
-    
+    width: 100% !important; 
   }
 }
