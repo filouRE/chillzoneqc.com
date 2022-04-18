@@ -1,15 +1,25 @@
 import React from "react";
+import { SlideBlue, SlideWhite } from "../../components/Transition/Slide";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 export default function TOS() {
   return (
     <>
-      <div className="Tos px-[5em] py-[0em] md:px-[4em]">
+      <motion.div variants={SlideBlue} initial="initial" animate="animate" exit="exit" transition={SlideBlue.transition} className="fixed z-50 w-screen h-screen bg-blue-600">
+        <div className="md:text-5xl h-full flex items-center justify-center font-black text-6xl text-white">
+          <h1 className="animate-bounce text-center">CHILLZONE QC</h1>
+        </div>
+      </motion.div>
+      <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>
+      <div className="px-20">
         <Header color="text-black" filter="brightness-0 saturate-100">
-          <a href="/" className="text-gray-900">
+          <Link to="/" className="text-gray-900">
             Accueil
-          </a>
+          </Link>
           <a className="text-gray-900" href="https://discord.gg/CZQC" target="_blank">
             Discord
           </a>
@@ -17,6 +27,8 @@ export default function TOS() {
             Whitelist
           </a>
         </Header>
+      </div>
+      <div className="Tos px-[5em] py-[0em] md:px-[3em]">
         <div className="content">
           <h1 className="text-2xl font-bold flex items-center justify-center text-center">Conditions d'utilisation pour le Chillzone QC</h1>
 
@@ -44,7 +56,7 @@ export default function TOS() {
 
           <p>
             Cela permettra à Chillzone QC de résilier en cas de violation de l'une de ces restrictions. En cas de résiliation, votre droit de visionnage sera également résilié et vous devrez détruire tout matériel téléchargé en votre
-            possession, qu'il soit format imprimé ou électronique. Ces conditions d'utilisation ont été créées à l'aide du <a href="https://www.termsofservicegenerator.net">générateur de conditions d'utilisation</a>.
+            possession, qu'il soit format imprimé ou électronique
           </p>
 
           <h2>3. Avis de non-responsabilité</h2>

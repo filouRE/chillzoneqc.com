@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Burger from "../../data/burger.svg";
 import Exit from "../../data/exit.svg";
@@ -33,17 +34,17 @@ const Header = ({ children, color = "text-white", filter }) => {
   return (
     <>
       <header className=" top-0 z-99 py-6 px-5 flex items-center justify-between">
-        <a href="/" className={`text-3xl font-bold ${color}`}>
+        <Link to="/" className={`text-3xl font-bold ${color}`}>
           CHILLZONE QC
-        </a>
+        </Link>
         {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center text-white">{children}</nav>}
       </header>
 
       <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
         <div className="py-6 px-6 flex items-center justify-between">
-          <a href="/" className="text-3xl font-bold">
+          <Link to="/" className="text-3xl font-bold">
             CHILLZONE QC
-          </a>
+          </Link>
           <img width={30} height={30} src={Exit} className="cursor-pointer" onClick={() => onToggleSidebar(false)} />
         </div>
       </header>

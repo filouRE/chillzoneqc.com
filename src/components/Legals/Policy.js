@@ -1,15 +1,25 @@
 import React from "react";
+import { SlideBlue, SlideWhite } from "../../components/Transition/Slide";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 export default function Policy() {
   return (
     <>
-      <div className="Politique px-[5em] py-[0em] md:px-[4em]">
+      <motion.div variants={SlideBlue} initial="initial" animate="animate" exit="exit" transition={SlideBlue.transition} className="fixed z-50 w-screen h-screen bg-blue-600">
+        <div className="md:text-5xl h-full flex items-center justify-center font-black text-6xl text-white">
+          <h1 className="animate-bounce text-center">CHILLZONE QC</h1>
+        </div>
+      </motion.div>{" "}
+      <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>{" "}
+      <div className="px-20">
         <Header color="text-black" filter="brightness-0 saturate-100">
-          <a href="/" className="text-gray-900">
+          <Link to="/" className="text-gray-900">
             Accueil
-          </a>
+          </Link>
           <a className="text-gray-900" href="https://discord.gg/CZQC" target="_blank">
             Discord
           </a>
@@ -17,6 +27,8 @@ export default function Policy() {
             Whitelist
           </a>
         </Header>
+      </div>
+      <div className="Politique px-[5em] py-[0em] md:px-[3em]">
         <div className="content">
           <h1 className="text-2xl font-bold flex items-center justify-center text-center">Politique de confidentialité pour le Chillzone QC</h1>
 
@@ -29,8 +41,7 @@ export default function Policy() {
 
           <p>
             Cette politique de confidentialité s'applique uniquement à nos activités en ligne et est valable pour les visiteurs de notre site Web en ce qui concerne les informations qu'ils ont partagées et/ou collectées sur chillzoneqc.com.
-            Cette politique ne s'applique à aucun informations collectées hors ligne ou via des canaux autres que ce site Web. Notre politique de confidentialité a été créée à l'aide du{" "}
-            <a href="https://www.politiquepolicygenerator.info">générateur gratuit de politique de confidentialité</a>.
+            Cette politique ne s'applique à aucun informations collectées hors ligne ou via des canaux autres que ce site Web.
           </p>
 
           <h2>Consentement</h2>
@@ -127,7 +138,6 @@ export default function Policy() {
           </p>
         </div>
       </div>
-
       <Footer />
     </>
   );
