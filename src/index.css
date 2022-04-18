@@ -65,6 +65,10 @@ html {
 
 @layer components {
   /* PLANS */
+  .Plans {
+    @apply flex items-center justify-center mb-5 gap-5;
+  }
+
   .Plans div {
     @apply flex flex-col gap-5 justify-between items-center;
     @apply px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-black bg-[#f4f4f4];
@@ -98,25 +102,13 @@ html {
     @apply bg-black;
   }
 
-  /* CAROUSEL */
-  .Carousel {
-    @apply flex justify-center items-center mb-10;
-  }
+  @media screen and (max-width: 700px) {
+    .Plans {
+      @apply flex-col gap-5 px-5;
+    }
 
-  .Carousel .container {
-    @apply relative min-h-[500px] flex justify-center;
-  }
-
-  .Carousel .slider {
-    @apply flex items-center gap-10 absolute;
-    transition: 300ms;
-  }
-
-  .Carousel.mobile .slider {
-
-  }
-
-  .Carousel.mobile .slider div {
-    width: 100% !important; 
+    .Plans div {
+      @apply w-full max-w-full h-[400px];
+    }
   }
 }

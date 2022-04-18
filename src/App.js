@@ -1,7 +1,6 @@
 // Imports
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Carousel from "./components/Carousel";
 
 // Images
 import Arrow from "./data/arrow.svg";
@@ -132,55 +131,52 @@ function App() {
           </h2>
 
           <div>
-            <Carousel
-              className="Plans"
-              slides={[
-                <div>
-                  <span>VIP</span>
-                  <b>
-                    $1<span>/month</span>
-                  </b>
-                  <ul>
-                    <li>FEATURE</li>
-                    <li>FEATURE</li>
-                    <li>FEATURE</li>
-                  </ul>
-                  <a>
-                    <b>S'abonner maintenant</b>
-                  </a>
-                </div>,
+            <div className="Plans">
+              <div>
+                <span>VIP</span>
+                <b>
+                  $1<span>/month</span>
+                </b>
+                <ul>
+                  <li>FEATURE</li>
+                  <li>FEATURE</li>
+                  <li>FEATURE</li>
+                </ul>
+                <a>
+                  <b>S'abonner maintenant</b>
+                </a>
+              </div>
 
-                <div>
-                  <span>VIP+</span>
-                  <b>
-                    $2<span>/month</span>
-                  </b>
-                  <ul>
-                    <li>FEATURE</li>
-                    <li>FEATURE</li>
-                    <li>FEATURE</li>
-                  </ul>
-                  <a>
-                    <b>S'abonner maintenant</b>
-                  </a>
-                </div>,
+              <div>
+                <span>VIP+</span>
+                <b>
+                  $2<span>/month</span>
+                </b>
+                <ul>
+                  <li>FEATURE</li>
+                  <li>FEATURE</li>
+                  <li>FEATURE</li>
+                </ul>
+                <a>
+                  <b>S'abonner maintenant</b>
+                </a>
+              </div>
 
-                <div>
-                  <span>VIP++</span>
-                  <b>
-                    $5<span>/month</span>
-                  </b>
-                  <ul>
-                    <li>FEATURE</li>
-                    <li>FEATURE</li>
-                    <li>FEATURE</li>
-                  </ul>
-                  <a>
-                    <b>S'abonner maintenant</b>
-                  </a>
-                </div>,
-              ]}
-            />
+              <div>
+                <span>VIP++</span>
+                <b>
+                  $5<span>/month</span>
+                </b>
+                <ul>
+                  <li>FEATURE</li>
+                  <li>FEATURE</li>
+                  <li>FEATURE</li>
+                </ul>
+                <a>
+                  <b>S'abonner maintenant</b>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div
