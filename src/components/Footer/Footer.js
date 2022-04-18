@@ -29,11 +29,11 @@ export default function Footer() {
       </span>
       <nav className="flex gap-3 text-center">
         <a href="/politique">
-          <b className="text-base">Politique de confidentialité</b>
+          <b className="text-base text-gray-900">Politique de confidentialité</b>
         </a>
 
         <a href="/tos">
-          <b className="text-base">Conditions de services</b>
+          <b className="text-base text-gray-900">Conditions de services</b>
         </a>
       </nav>
     </footer>
