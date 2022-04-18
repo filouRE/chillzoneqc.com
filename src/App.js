@@ -47,9 +47,9 @@ function App() {
           </a>
         </div>
         <div className="flex flex-col items-center">
-          <Link to="#about-us">
-            <img src={Down} alt="" className="w-6 cursor-pointer transition-all bounce" />
-          </Link>
+          <a href="#about-us">
+            <img src={Down} alt="" className="w-6 cursor-pointer transition-all animate-bounce" />
+          </a>
         </div>
       </div>
       <img src={Wave} alt="wave image" className="w-screen" />
@@ -100,7 +100,7 @@ function App() {
         </h2>
         <div>
           <div className="flex items-center justify-center mb-5 gap-5 md:flex-col md:px-5">
-            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[68vw] md:max-w-full md:h-[400px]">
+            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw] md:max-w-full md:h-[400px]">
               <span className="text-2xl">VIP</span>
               <b className="text-5xl">
                 $3<span className="text-2xl">/mois</span>
@@ -110,11 +110,11 @@ function App() {
                 <li>FEATURE</li>
                 <li>FEATURE</li>
               </ul>
-              <Link to="google.com" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 px-14  w-full text-center">
+              <Link to="google.com" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 w-full text-center">
                 <b className="text-xl ">S'abonner maintenant</b>
               </Link>
             </div>
-            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] text-white bg-blue-600 h-[480px] md:w-[70vw] md:max-w-full md:h-[400px]">
+            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] text-white bg-blue-600 h-[480px] md:w-[87vw] md:max-w-full md:h-[400px]">
               <span className="text-2xl">VIP+</span>
               <b className="text-5xl">
                 $6<span className="text-2xl">/mois</span>
@@ -124,11 +124,11 @@ function App() {
                 <li>FEATURE</li>
                 <li>FEATURE</li>
               </ul>
-              <Link to="google.com" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 px-14 text-center bg-gray-900 ">
+              <Link to="google.com" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 w-full text-center bg-gray-900 ">
                 <b className="text-xl">S'abonner maintenant</b>
               </Link>
             </div>
-            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[68vw]  md:max-w-full md:h-[400px]">
+            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw]  md:max-w-full md:h-[400px]">
               <span className="text-2xl">VIP++</span>
               <b className="text-5xl">
                 $10<span className="text-2xl">/mois</span>
@@ -138,7 +138,7 @@ function App() {
                 <li>FEATURE</li>
                 <li>FEATURE</li>
               </ul>
-              <Link to="google.com" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 px-14  w-full text-center">
+              <Link to="google.com" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md md py-4 w-full text-center">
                 <b className="text-xl">S'abonner maintenant</b>
               </Link>
             </div>

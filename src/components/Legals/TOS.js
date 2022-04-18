@@ -15,7 +15,7 @@ export default function TOS() {
         </div>
       </motion.div>
       <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>
-      <div className="px-20">
+      <div className="px-20 md:px-1">
         <Header color="text-black" filter="brightness-0 saturate-100">
           <Link to="/" className="text-gray-900">
             Accueil

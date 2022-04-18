@@ -30,21 +30,3 @@ html {
 .Politique .content * {
   padding: 1em 0;
 }
-
-.bounce {
-  animation: infinite bounce 2000ms;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
