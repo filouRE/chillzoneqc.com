@@ -17,13 +17,13 @@ export default function Policy() {
       <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>{" "}
       <div className="px-20 md:px-1">
         <Header color="text-black" filter="brightness-0 saturate-100">
-          <Link to="/" className="text-gray-900">
+          <Link to="/" className="hover:-translate-y-1 transition-all text-gray-900">
             Accueil
           </Link>
-          <a className="text-gray-900" href="https://discord.gg/CZQC" target="_blank">
+          <a href="https://discord.gg/CZQC" className="hover:-translate-y-1 transition-all text-gray-900" target="_blank">
             Discord
           </a>
-          <a href="https://www.patreon.com/CZQC" className="bg-blue-600 px-3 py-2 text-white rounded mr-6">
+          <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-600/40 transition-all bg-blue-600 px-3 py-2 text-white rounded">
             Whitelist
           </a>
         </Header>

@@ -24,11 +24,13 @@ function App() {
       <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>
       <div className="hero h-screen w-screen bg-[url('./data/background.png')] bg-center bg-no-repeat bg-cover px-20 md:px-1">
         <Header color="text-white">
-          <Link to="/">Accueil</Link>
-          <a href="https://discord.gg/CZQC" target="_blank">
+          <Link to="/" className="hover:-translate-y-1 transition-all">
+            Accueil
+          </Link>
+          <a href="https://discord.gg/CZQC" className="hover:-translate-y-1 transition-all" target="_blank">
             Discord
           </a>
-          <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-600/40 transition-all bg-blue-600 px-3 py-2 text-white rounded mr-6">
+          <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-600/40 transition-all bg-blue-600 px-3 py-2 text-white rounded ">
             Whitelist
           </a>
         </Header>
@@ -54,7 +56,7 @@ function App() {
       </div>
       <img src={Wave} alt="wave image" className="w-screen" />
       <div className="2xl:px-40 md:px-5 lgg:px-5 flex item-center justify-evenly flex-col flex-wrap px-80">
-        <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 text-gray-900 text-center">
+        <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 my-1 text-gray-900 text-center">
           Qui sommes-nous?
         </h2>
         <div className="group-cards flex flex-col gap-6">
@@ -95,7 +97,7 @@ function App() {
         </div>
       </div>
       <div id="price">
-        <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 px-2 text-gray-900 text-center">
+        <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 my-1 px-2 text-gray-900 text-center">
           Soutenez nous avec un abonnement exclusif!
         </h2>
         <div>
@@ -105,42 +107,36 @@ function App() {
               <b className="text-5xl">
                 $3<span className="text-2xl">/mois</span>
               </b>
-              <ul className="flex flex-col gap-5 text-gray-900">
-                <li>FEATURE</li>
-                <li>FEATURE</li>
-                <li>FEATURE</li>
+              <ul className="flex flex-col gap-5 text-gray-900 px-10">
+                <li className="font-bold text-center">WHITELISTING SUR NOTRE SERVEUR SQUAD</li>
               </ul>
-              <Link to="google.com" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 w-full text-center">
-                <b className="text-xl ">S'abonner maintenant</b>
-              </Link>
+              <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 w-full text-center">
+                <b className="text-xl">S'abonner maintenant</b>
+              </a>
             </div>
             <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] text-white bg-blue-600 h-[480px] md:w-[87vw] md:max-w-full md:h-[400px]">
               <span className="text-2xl">VIP+</span>
               <b className="text-5xl">
                 $6<span className="text-2xl">/mois</span>
               </b>
-              <ul className="flex flex-col gap-5 ">
-                <li>FEATURE</li>
-                <li>FEATURE</li>
-                <li>FEATURE</li>
+              <ul className="flex flex-col gap-5 text-white px-10">
+                <li className="font-bold text-center">WHITELISTING SUR NOTRE SERVEUR SQUAD</li>
               </ul>
-              <Link to="google.com" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 w-full text-center bg-gray-900 ">
+              <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 w-full text-center bg-gray-900 ">
                 <b className="text-xl">S'abonner maintenant</b>
-              </Link>
+              </a>
             </div>
             <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw]  md:max-w-full md:h-[400px]">
               <span className="text-2xl">VIP++</span>
               <b className="text-5xl">
                 $10<span className="text-2xl">/mois</span>
               </b>
-              <ul className="flex flex-col gap-5 text-gray-900">
-                <li>FEATURE</li>
-                <li>FEATURE</li>
-                <li>FEATURE</li>
+              <ul className="flex flex-col gap-5 text-gray-900 px-10">
+                <li className="font-bold text-center">WHITELISTING SUR NOTRE SERVEUR SQUAD</li>
               </ul>
-              <Link to="google.com" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md md py-4 w-full text-center">
+              <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md md py-4 w-full text-center">
                 <b className="text-xl">S'abonner maintenant</b>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

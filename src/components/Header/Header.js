@@ -41,12 +41,13 @@ const Header = ({ children, color = "text-white", filter }) => {
       </header>
 
       <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
-        <div className="py-6 px-6 flex items-center justify-between">
+        <div className="py-6 px-6 flex items-center justify-between ">
           <Link to="/" className="text-3xl font-bold">
             CHILLZONE QC
           </Link>
           <img width={30} height={30} src={Exit} className="cursor-pointer" onClick={() => onToggleSidebar(false)} />
         </div>
+        <nav className="flex flex-col gap-10 items-center justify-center h-[80vh] text-4xl">{children}</nav>
       </header>
     </>
   );
