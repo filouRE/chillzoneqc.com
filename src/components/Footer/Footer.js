@@ -9,20 +9,20 @@ export default function Footer() {
   return (
     <footer className="w-full flex flex-col items-center gap-1 my-5 px-2">
       <div id="icons" className="flex gap-5 items-center">
-        <a href="https://www.patreon.com/CZQC" target="_blank">
+        <a href="https://www.patreon.com/CZQC" target="_blank" rel="noopener noreferrer">
           <img width={25} src={Patreon} alt="patreon logo" />
         </a>
-        <a href="https://discord.gg/CZQC" target="_blank">
+        <a href="https://discord.gg/CZQC" target="_blank" rel="noopener noreferrer">
           <img width={30} src={Discord} alt="discord logo" />
         </a>
-        <a href="https://youtube.com" target="_blank">
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
           <img width={30} src={Youtube} alt="youtube logo" />
         </a>
       </div>
       <span>Fait avec ❤️ du Québec ⚜️​</span>
       <span className="text-center px-5">
         © 2022
-        <a href="https://seku.tech" target="_blank" className="font-semibold">
+        <a href="https://seku.tech" target="_blank" className="font-semibold" rel="noopener noreferrer">
           &nbsp;Seku Technologies&nbsp;
         </a>
         Tous les droits sont réservés.

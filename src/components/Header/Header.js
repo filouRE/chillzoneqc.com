@@ -47,7 +47,7 @@ const Header = ({ children, color = "text-white", filter }) => {
           </Link>
           <img width={30} height={30} src={Exit} className="cursor-pointer" onClick={() => onToggleSidebar(false)} />
         </div>
-        <nav className="flex flex-col gap-10 items-center justify-center h-[80vh] text-4xl">{children}</nav>
+        <nav className="flex flex-col gap-10 items-center justify-center h-[80vh] text-4xl font-bold">{children}</nav>
       </header>
     </>
   );

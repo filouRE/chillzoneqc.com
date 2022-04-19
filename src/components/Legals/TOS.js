@@ -20,7 +20,7 @@ export default function TOS() {
           <Link to="/" className="hover:-translate-y-1 transition-all text-gray-900">
             Accueil
           </Link>
-          <a href="https://discord.gg/CZQC" className="hover:-translate-y-1 transition-all text-gray-900" target="_blank">
+          <a target="_blank" href="https://discord.gg/CZQC" rel="noopener noreferrer" className="hover:-translate-y-1 transition-all text-gray-900">
             Discord
           </a>
           <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-600/40 transition-all bg-blue-600 px-3 py-2 text-white rounded ">
