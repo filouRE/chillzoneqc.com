@@ -10,7 +10,7 @@ export default function Policy() {
   return (
     <>
       <motion.div variants={SlideBlue} initial="initial" animate="animate" exit="exit" transition={SlideBlue.transition} className="fixed z-50 w-screen h-screen bg-blue-600">
-        <div className="md:text-5xl h-full flex items-center justify-center font-black text-6xl text-white">
+        <div className=" md:text-4xl h-full flex items-center justify-center font-black text-6xl text-white">
           <h1 className="animate-bounce text-center">CHILLZONE QC</h1>
         </div>
       </motion.div>{" "}

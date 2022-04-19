@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <motion.div variants={SlideBlue} initial="initial" animate="animate" exit="exit" transition={SlideBlue.transition} className="fixed z-50 w-screen h-screen bg-blue-600">
-        <div className="md:text-5xl h-full flex items-center justify-center font-black text-6xl text-white">
+        <div className=" md:text-4xl h-full flex items-center justify-center font-black text-6xl text-white">
           <h1 className="animate-bounce text-center">CHILLZONE QC</h1>
         </div>
       </motion.div>
@@ -60,11 +60,9 @@ function App() {
       </div>
       <img src={Wave} alt="wave image" className="w-screen" />
       <div className="2xl:px-40 md:px-5 lgg:px-5 flex item-center justify-evenly flex-col flex-wrap px-80">
-        <FadeInWhenVisible>
-          <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 my-1 text-gray-900 text-center">
-            Qui sommes-nous?
-          </h2>
-        </FadeInWhenVisible>
+        <h2 id="about-us" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 my-1 text-gray-900 text-center">
+          Qui sommes-nous?
+        </h2>
         <div className="group-cards flex flex-col gap-6">
           <div className="cards-1 flex items-center justify-center md:flex-wrap gap-8">
             <FadeInWhenVisible>
@@ -117,11 +115,9 @@ function App() {
         </div>
       </div>
       <div id="price">
-        <FadeInWhenVisible>
-          <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 my-1 px-2 text-gray-900 text-center">
-            Soutenez nous avec un abonnement exclusif!
-          </h2>
-        </FadeInWhenVisible>
+        <h2 id="prices" className="md:text-4xl flex items-center justify-center font-bold text-6xl py-6 my-1 px-2 text-gray-900 text-center">
+          Soutenez nous avec un abonnement exclusif!
+        </h2>
 
         <div>
           <div className="flex items-center justify-center mb-5 gap-5 md:flex-col md:px-5">
