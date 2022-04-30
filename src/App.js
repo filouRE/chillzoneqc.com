@@ -27,7 +27,7 @@ function App() {
           <Link to="/" className="hover:-translate-y-1 transition-all">
             Accueil
           </Link>
-          <a href="https://discord.gg/CZQC" className="hover:-translate-y-1 transition-all" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.com/invite/w69xrpNHne" className="hover:-translate-y-1 transition-all" target="_blank" rel="noopener noreferrer">
             Discord
           </a>
           <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-600/40 transition-all bg-blue-600 px-3 py-2 text-white rounded ">
@@ -42,7 +42,7 @@ function App() {
           </FadeInWhenVisible>
 
           <a
-            href="https://discord.gg/CZQC"
+            href="https://discord.com/invite/w69xrpNHne"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-600/40 transition-all flex text-center justify-center gap-2 bg-blue-600 rounded-lg w-56
@@ -175,7 +175,7 @@ function App() {
               </h3>
               <div id="right-side" className="md:flex-col-reverse flex gap-5 justify-center items-center">
                 <a
-                  href="https://discord.gg/CZQC"
+                  href="https://discord.com/invite/w69xrpNHne"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all md:px-10 lg:h-auto lg:py-3 flex text-center bg-gray-900 text-white rounded-lg px-6 h-12"
