@@ -74,3 +74,14 @@ iframe {
     height: 100vh;
   }
 }
+
+@media screen and (max-width: 764px) {
+  .hero {
+    background-image: url(./data/background.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+    z-index: -1;
+  }
+}
