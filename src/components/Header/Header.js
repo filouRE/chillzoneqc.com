@@ -37,7 +37,7 @@ const Header = ({ children, color = "text-white", filter }) => {
         <Link to="/" className={`text-3xl font-bold ${color}`}>
           CHILLZONE QC
         </Link>
-        {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center text-white">{children}</nav>}
+        {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center font-semibold text-white">{children}</nav>}
       </header>
 
       <header className="open-header hidden w-screen h-screen top-0 translate-x-full">
@@ -47,7 +47,7 @@ const Header = ({ children, color = "text-white", filter }) => {
           </Link>
           <img width={30} height={30} src={Exit} className="cursor-pointer" onClick={() => onToggleSidebar(false)} />
         </div>
-        <nav className="flex flex-col gap-10 items-center justify-center h-[80vh] text-4xl font-bold">{children}</nav>
+        <nav className="flex flex-col gap-10 items-center justify-center h-[80vh] text-4xl font-semibold">{children}</nav>
       </header>
     </>
   );
