@@ -30,7 +30,7 @@ function App() {
       <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>
       <div class="video-container blurred">
         <iframe
-          src="https://www.youtube.com/embed/diPOQRZNpJM?rel=0?version=3&autoplay=1&controls=0&start=8&end=85&mute=1"
+          src="https://www.youtube.com/embed/diPOQRZNpJM?rel=0?version=3&loop=1&autoplay=1&controls=0&start=8&end=85&mute=1&playlist=diPOQRZNpJM"
           width="590"
           height="431"
           frameborder="0"

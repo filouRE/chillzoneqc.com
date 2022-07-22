@@ -17,6 +17,11 @@ html {
   max-width: 100%;
 }
 
+body {
+  overflow-x: hidden !important;
+  max-width: 100%;
+}
+
 .sidebar-active {
   transform: translateX(-100vw);
   transition: 400ms;

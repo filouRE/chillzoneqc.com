@@ -13,7 +13,7 @@ export default function Policy() {
         <div className=" md:text-4xl h-full flex items-center justify-center font-black text-6xl text-white">
           <h1 className="animate-bounce text-center">CHILLZONE QC</h1>
         </div>
-      </motion.div>{" "}
+      </motion.div>
       <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>{" "}
       <div className="px-20 md:px-1">
         <Header color="text-black" filter="brightness-0 saturate-100">
