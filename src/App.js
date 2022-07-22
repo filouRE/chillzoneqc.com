@@ -140,7 +140,7 @@ function App() {
                   $3<span className="text-2xl">/mois</span>
                 </b>
                 <ul className="flex flex-col gap-5 text-gray-900 px-10">
-                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre</li>
+                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP</li>
                 </ul>
                 <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 w-full text-center">
                   <b className="text-xl">S'abonner maintenant</b>
@@ -154,7 +154,7 @@ function App() {
                   $6<span className="text-2xl">/mois</span>
                 </b>
                 <ul className="flex flex-col gap-5 text-white px-10">
-                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre</li>
+                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP+</li>
                 </ul>
                 <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 w-full text-center bg-gray-900 ">
                   <b className="text-xl">S'abonner maintenant</b>
@@ -168,7 +168,7 @@ function App() {
                   $10<span className="text-2xl ">/mois</span>
                 </b>
                 <ul className="flex flex-col gap-5 text-gray-900 px-10">
-                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre</li>
+                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP++</li>
                 </ul>
                 <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md md py-4 w-full text-center">
                   <b className="text-xl">S'abonner maintenant</b>
