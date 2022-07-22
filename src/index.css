@@ -14,9 +14,14 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
   transition: 400ms;
-  max-width: 100%;
+  width: 100%;
 }
-
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
 .sidebar-active {
   transform: translateX(-100vw);
   transition: 400ms;
