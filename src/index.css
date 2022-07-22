@@ -84,4 +84,7 @@ iframe {
     background-position: center;
     z-index: -1;
   }
+  .video-container {
+    width: 0vw;
+  }
 }
