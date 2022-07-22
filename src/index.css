@@ -20,7 +20,6 @@ html {
 body {
   overflow-x: hidden !important;
   max-width: 100%;
-  background-color: #0066ff;
 }
 
 .sidebar-active {
