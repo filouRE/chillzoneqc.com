@@ -30,10 +30,10 @@ function App() {
       <motion.div variants={SlideWhite} initial="initial" animate="animate" exit="exit" transition={SlideWhite.transition} className="fixed z-40 w-screen h-screen bg-white"></motion.div>
 
       <div class="video-container blurred">
-        <iframe src="https://www.youtube.com/embed/diPOQRZNpJM?rel=0?version=3&autoplay=1&controls=0&start=8&end=85&showinfo=0&playlist=diPOQRZNpJM&loop=1&mute=1"></iframe>
+        <iframe src="https://www.youtube.com/embed/diPOQRZNpJM?rel=0?version=3&autoplay=1&controls=0&start=8&end=85&mute=1"></iframe>
       </div>
 
-      <div className="hero h-screen w-screen bg-center bg-no-repeat bg-cover px-20 md:px-1">
+      <div className="hero h-[100vh] w-screen px-20 md:px-1">
         <Header color="text-white">
           <Link to="/" className="hover:-translate-y-1 transition-all">
             Accueil
@@ -175,7 +175,7 @@ function App() {
         </div>
       </div>
       <div id="ad" className="px-5  w-screen flex items-center justify-center">
-        <div id="box" className="bg-blue-600 w-[60rem] md:w-[85vw] md:max-w-full rounded-2xl flex items-center justify-between gap-5 my-1 px-10 pb-5">
+        <div id="box" className="bg-blue-600 w-[60rem] md:w-[85vw] md:max-w-full rounded-2xl flex items-center justify-between md:justify-center gap-5 my-1 px-10 pb-5">
           <div id="text">
             <h3 id="about-us" className="md:text-center md:text-2xl md:items-center flex flex-col items-start justify-center font-black text-4xl py-6 text-white">
               REJOINS NOUS SUR <br /> DISCORD DÈS MAINTENANT

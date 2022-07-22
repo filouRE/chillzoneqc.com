@@ -33,14 +33,14 @@ const Header = ({ children, color = "text-white", filter }) => {
 
   return (
     <>
-      <header className=" top-0 z-99 py-6 px-5 w-screen flex items-center justify-between">
+      <header className=" top-0 z-99 py-6 px-5 w-full flex items-center justify-between ">
         <Link to="/" className={`text-3xl font-bold ${color}`}>
           CHILLZONE QC
         </Link>
         {mobile ? <img width={30} height={30} src={Burger} className={`cursor-pointer ${filter}`} onClick={() => onToggleSidebar(true)} /> : <nav className="flex gap-10  items-center font-semibold text-white">{children}</nav>}
       </header>
 
-      <header className="open-header hidden w-screen h-screen top-0 translate-x-[99vw] bg-white ">
+      <header className="open-header hidden w-full h-screen top-0 translate-x-[99vw] bg-white ">
         <div className="py-6 px-6 flex items-center justify-between ">
           <Link to="/" className="text-3xl font-bold">
             CHILLZONE QC

@@ -3,7 +3,7 @@ export const SlideBlue = {
     x: 0,
   },
   animate: {
-    x: "200vw",
+    x: "201vw",
   },
   exit: {
     x: 0,

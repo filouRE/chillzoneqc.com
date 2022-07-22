@@ -58,7 +58,6 @@ iframe {
 
 @media (min-aspect-ratio: 16/9) {
   .video-container iframe {
-    /* height = 100 * (9 / 16) = 56.25 */
     height: 56.25vw;
   }
 }
@@ -70,7 +69,7 @@ iframe {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1700px) {
   .video-container {
     height: 100vh;
   }
