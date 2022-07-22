@@ -133,78 +133,72 @@ function App() {
 
         <div>
           <div className="flex items-center justify-center mb-5 gap-5 md:flex-col md:px-5">
-            <FadeInWhenVisible>
-              <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw] md:max-w-full md:h-[400px]">
-                <span className="text-2xl font-bold">VIP</span>
-                <b className="text-5xl">
-                  $3<span className="text-2xl">/mois</span>
-                </b>
-                <ul className="flex flex-col gap-5 text-gray-900 px-10">
-                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP</li>
-                </ul>
-                <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 w-full text-center">
-                  <b className="text-xl">S'abonner maintenant</b>
-                </a>
-              </div>
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] text-white bg-blue-600 h-[480px] md:w-[87vw] md:max-w-full md:h-[400px]">
-                <span className="text-2xl font-bold">VIP+</span>
-                <b className="text-5xl">
-                  $6<span className="text-2xl">/mois</span>
-                </b>
-                <ul className="flex flex-col gap-5 text-white px-10">
-                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP+</li>
-                </ul>
-                <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 w-full text-center bg-gray-900 ">
-                  <b className="text-xl">S'abonner maintenant</b>
-                </a>
-              </div>
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw]  md:max-w-full md:h-[400px]">
-                <span className="text-2xl font-bold">VIP++</span>
-                <b className="text-5xl">
-                  $10<span className="text-2xl ">/mois</span>
-                </b>
-                <ul className="flex flex-col gap-5 text-gray-900 px-10">
-                  <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP++</li>
-                </ul>
-                <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md md py-4 w-full text-center">
-                  <b className="text-xl">S'abonner maintenant</b>
-                </a>
-              </div>
-            </FadeInWhenVisible>
+            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw] md:max-w-full md:h-[400px]">
+              <span className="text-2xl font-bold">VIP</span>
+              <b className="text-5xl">
+                $3<span className="text-2xl">/mois</span>
+              </b>
+              <ul className="flex flex-col gap-5 text-gray-900 px-10">
+                <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP</li>
+              </ul>
+              <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md py-4 w-full text-center">
+                <b className="text-xl">S'abonner maintenant</b>
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] text-white bg-blue-600 h-[480px] md:w-[87vw] md:max-w-full md:h-[400px]">
+              <span className="text-2xl font-bold">VIP+</span>
+              <b className="text-5xl">
+                $6<span className="text-2xl">/mois</span>
+              </b>
+              <ul className="flex flex-col gap-5 text-white px-10">
+                <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP+</li>
+              </ul>
+              <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all	rounded-md py-4 w-full text-center bg-gray-900 ">
+                <b className="text-xl">S'abonner maintenant</b>
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-5 justify-between items-center px-5 py-10 rounded-md w-[30vw] max-w-[400px] h-[450px] text-gray-900 bg-[#f4f4f4] md:w-[85vw]  md:max-w-full md:h-[400px]">
+              <span className="text-2xl font-bold">VIP++</span>
+              <b className="text-5xl">
+                $10<span className="text-2xl ">/mois</span>
+              </b>
+              <ul className="flex flex-col gap-5 text-gray-900 px-10">
+                <li className="font-medium text-center text-base">Une fois la souscription effectuée. connectez-vous à notre discord et suivez les instructions. Un de nos administrateur vous aidera à activer votre VIP++</li>
+              </ul>
+              <a href="https://www.patreon.com/CZQC" className="hover:-translate-y-1 hover:bg-gray-900 hover:text-white transition-all bg-white rounded-md md py-4 w-full text-center">
+                <b className="text-xl">S'abonner maintenant</b>
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div id="ad" className="px-5  w-screen flex items-center justify-center">
-        <FadeInWhenVisible>
-          <div id="box" className="bg-blue-600 w-[60rem] md:w-[85vw] md:max-w-full rounded-2xl flex items-center justify-between gap-5 my-1 px-10 pb-5">
-            <div id="text">
-              <h3 id="about-us" className="md:text-center md:text-2xl md:items-center flex flex-col items-start justify-center font-black text-4xl py-6 text-white">
-                REJOINS NOUS SUR <br /> DISCORD DÈS MAINTENANT
-              </h3>
-              <div id="right-side" className="md:flex-col-reverse flex gap-5 justify-center items-center">
-                <a
-                  href="https://discord.com/invite/w69xrpNHne"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all lg:h-auto lg:py-3 flex text-center bg-gray-900 text-white rounded-lg px-6 h-12"
-                >
-                  <button className="font-bold">Rejoindre notre Discord</button>
-                </a>
-                <div id="reversed-flex" className="md:text-center">
-                  <p className="md:font-bold lg:text-base text-white font-black text-xl">500+ MEMBRES ACTIFS</p>
-                  <p className="md:font-bold lg:text-base text-white font-black text-xl">
-                    STAFF CONNECTER H24 POUR <br /> TOUT QUESTION!
-                  </p>
-                </div>
+        <div id="box" className="bg-blue-600 w-[60rem] md:w-[85vw] md:max-w-full rounded-2xl flex items-center justify-between gap-5 my-1 px-10 pb-5">
+          <div id="text">
+            <h3 id="about-us" className="md:text-center md:text-2xl md:items-center flex flex-col items-start justify-center font-black text-4xl py-6 text-white">
+              REJOINS NOUS SUR <br /> DISCORD DÈS MAINTENANT
+            </h3>
+            <div id="right-side" className="md:flex-col-reverse flex gap-5 justify-center items-center">
+              <a
+                href="https://discord.com/invite/w69xrpNHne"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:-translate-y-1 hover:bg-white hover:text-gray-900 transition-all lg:h-auto lg:py-3 flex text-center bg-gray-900 text-white rounded-lg px-6 h-12"
+              >
+                <button className="font-bold">Rejoindre notre Discord</button>
+              </a>
+              <div id="reversed-flex" className="md:text-center">
+                <p className="md:font-bold lg:text-base text-white font-black text-xl">500+ MEMBRES ACTIFS</p>
+                <p className="md:font-bold lg:text-base text-white font-black text-xl">
+                  STAFF CONNECTER H24 POUR <br /> TOUT QUESTION!
+                </p>
               </div>
             </div>
-            <img src={Donut} alt="" className="md:hidden" />
           </div>
-        </FadeInWhenVisible>
+          <img src={Donut} alt="" className="md:hidden" />
+        </div>
       </div>
       <Footer />
       <img src={Spring} alt="" className="lg:hidden absolute top-[130vh] right-0" />
