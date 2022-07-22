@@ -91,5 +91,13 @@ iframe {
   }
   .video-container {
     width: 0vw;
+    overflow: x-hidden;
+  }
+
+  .video-container iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    overflow: x-hidden;
+
+    width: 0vw;
   }
 }
